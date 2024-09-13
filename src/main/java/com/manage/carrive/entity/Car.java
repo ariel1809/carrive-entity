@@ -1,6 +1,5 @@
 package com.manage.carrive.entity;
 
-import com.manage.carrive.enumeration.ColorEnum;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -28,5 +27,8 @@ public class Car {
     @DBRef
     private Driver driver;
     @EqualsAndHashCode.Exclude
-    private ColorEnum color;
+    private String color;
+    @EqualsAndHashCode.Exclude
+    @Field(value = "car_brand")
+    private String carBrand;
 }

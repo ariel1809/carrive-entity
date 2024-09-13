@@ -14,7 +14,8 @@ public class UserRegister {
     private String password;
     private String confirmPassword;
     private UserTypeEnum userType;
-    private ColorEnum color;
+    private String color;
     private String matriculation;
     private String idCar;
+    private String carBrand;
 }
