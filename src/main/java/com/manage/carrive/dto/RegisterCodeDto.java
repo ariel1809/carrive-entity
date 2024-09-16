@@ -5,7 +5,6 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 @ToString
 @Getter @Setter
