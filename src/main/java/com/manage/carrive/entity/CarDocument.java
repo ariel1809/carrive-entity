@@ -20,7 +20,7 @@ public class CarDocument {
     private String idCar;
     @EqualsAndHashCode.Exclude
     @Field(value = "is_valid")
-    private Boolean isValid;
+    private Boolean isValid = Boolean.FALSE;
     @EqualsAndHashCode.Exclude
     @Field(value = "send_at")
     private LocalDateTime sendAt;

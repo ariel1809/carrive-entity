@@ -14,9 +14,9 @@ public class UserCarriveDto {
     private String email;
     private String password;
     private String token;
+    private Boolean isRegister;
     private Boolean isActive;
     private Boolean isConnected;
     private LocalDateTime registerAt;
     private UserTypeEnum userType;
-
 }

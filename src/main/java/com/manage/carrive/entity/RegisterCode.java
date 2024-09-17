@@ -24,7 +24,7 @@ public class RegisterCode {
     private LocalDateTime expirationDate;
     @EqualsAndHashCode.Exclude
     @Field(value = "is_ok")
-    private Boolean isOk;
+    private Boolean isOk = Boolean.FALSE;
     @EqualsAndHashCode.Exclude
     @DBRef
     private UserCarrive user;

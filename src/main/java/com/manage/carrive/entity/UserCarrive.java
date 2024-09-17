@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -28,12 +29,19 @@ public abstract class UserCarrive {
     @EqualsAndHashCode.Exclude
     private String token;
     @EqualsAndHashCode.Exclude
-    private Boolean isActive;
+    @Field(value = "is_register")
+    private Boolean isRegister = Boolean.FALSE;
     @EqualsAndHashCode.Exclude
-    private Boolean isConnected;
+    @Field(value = "is_active")
+    private Boolean isActive = Boolean.FALSE;
     @EqualsAndHashCode.Exclude
+    @Field(value = "is_connected")
+    private Boolean isConnected = Boolean.FALSE;
+    @EqualsAndHashCode.Exclude
+    @Field(value = "register_at")
     private LocalDateTime registerAt;
     @EqualsAndHashCode.Exclude
+    @Field(value = "user_type")
     private UserTypeEnum userType;
     @EqualsAndHashCode.Exclude
     @DBRef

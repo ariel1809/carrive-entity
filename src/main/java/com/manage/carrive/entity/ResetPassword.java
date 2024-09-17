@@ -30,7 +30,7 @@ public class ResetPassword {
     private LocalDateTime resetDate;
     @EqualsAndHashCode.Exclude
     @Field(value = "is_reset")
-    private Boolean isReset;
+    private Boolean isReset = Boolean.FALSE;
     @EqualsAndHashCode.Exclude
     @DBRef
     private UserCarrive user;

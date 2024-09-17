@@ -29,5 +29,5 @@ public class Mailer {
     private LocalDateTime sendAt;
     @EqualsAndHashCode.Exclude
     @Field(value = "is_go")
-    private Boolean isGo;
+    private Boolean isGo = Boolean.FALSE;
 }

@@ -47,7 +47,7 @@ public class Itinerary extends UserCarrive{
     private StatusItineraryEnum status;
     @EqualsAndHashCode.Exclude
     @Field(value = "accepted_package")
-    private Boolean acceptedPackage;
+    private Boolean acceptedPackage = Boolean.FALSE;
     @EqualsAndHashCode.Exclude
     @Field(value = "created_by")
     private Driver createdBy;
