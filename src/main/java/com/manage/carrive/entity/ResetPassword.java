@@ -23,6 +23,9 @@ public class ResetPassword {
     @EqualsAndHashCode.Exclude
     private Integer code;
     @EqualsAndHashCode.Exclude
+    @Field(value = "check_code")
+    private Boolean checkCode = Boolean.FALSE;
+    @EqualsAndHashCode.Exclude
     @Field(value = "new_password")
     private String newPassword;
     @EqualsAndHashCode.Exclude

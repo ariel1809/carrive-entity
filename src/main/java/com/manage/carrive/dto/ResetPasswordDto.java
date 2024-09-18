@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 public class ResetPasswordDto {
     private String userMail;
     private Integer code;
+    private Boolean checkCode;
     private String newPassword;
     private LocalDateTime resetDate;
     private Boolean isReset;
