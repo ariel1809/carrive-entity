@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +19,8 @@ public class Driver extends UserCarrive{
     @EqualsAndHashCode.Include
     private String id;
     @EqualsAndHashCode.Exclude
-    private List<Car> cars = new ArrayList<>();
-    @EqualsAndHashCode.Exclude
     @DBRef
-    private PersonalDocument personalDocument;
+    private List<Car> cars = new ArrayList<>();
     @EqualsAndHashCode.Exclude
     @DBRef
     private List<Itinerary> itineraries = new ArrayList<>();

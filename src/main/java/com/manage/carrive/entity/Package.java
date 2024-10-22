@@ -5,6 +5,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @ToString
@@ -20,4 +21,7 @@ public class Package {
     private PackageEnum packageType;
     @EqualsAndHashCode.Exclude
     private String picture;
+    @EqualsAndHashCode.Exclude
+    @DBRef
+    private Itinerary itinerary;
 }

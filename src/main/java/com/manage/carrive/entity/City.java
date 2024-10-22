@@ -20,10 +20,6 @@ public class City {
     @EqualsAndHashCode.Exclude
     @Field(value = "city_name")
     private String cityName;
-    @EqualsAndHashCode.Exclude
-    @DBRef
-    private Province province;
-    @EqualsAndHashCode.Exclude
     @Field(value = "created_at")
     private LocalDateTime createdAt;
 }

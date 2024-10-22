@@ -18,4 +18,5 @@ public class UserRegister {
     private String matriculation;
     private String idCar;
     private String carBrand;
+    private String carModel;
 }

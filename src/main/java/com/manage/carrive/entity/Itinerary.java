@@ -30,12 +30,10 @@ public class Itinerary extends UserCarrive{
     private Double tariff;
     @EqualsAndHashCode.Exclude
     @Field(value = "start_city")
-    @DBRef
-    private City startCity;
+    private String startCity;
     @EqualsAndHashCode.Exclude
     @Field(value = "destination_city")
-    @DBRef
-    private City destinationCity;
+    private String destinationCity;
     @EqualsAndHashCode.Exclude
     @Field(value = "created_at")
     private LocalDateTime createdAt;

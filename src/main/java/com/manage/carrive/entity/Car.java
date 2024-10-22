@@ -18,10 +18,6 @@ public class Car {
     @EqualsAndHashCode.Exclude
     private String matriculation;
     @EqualsAndHashCode.Exclude
-    @DBRef
-    @Field(value = "car_document")
-    private CarDocument carDocument;
-    @EqualsAndHashCode.Exclude
     private String idCar;
     @EqualsAndHashCode.Exclude
     @DBRef
@@ -31,4 +27,7 @@ public class Car {
     @EqualsAndHashCode.Exclude
     @Field(value = "car_brand")
     private String carBrand;
+    @EqualsAndHashCode.Exclude
+    @Field(value = "car_model")
+    private String carModel;
 }

@@ -1,5 +1,6 @@
 package com.manage.carrive.dto;
 
+import com.manage.carrive.entity.City;
 import com.manage.carrive.enumeration.StatusItineraryEnum;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,8 +16,8 @@ public class ItineraryDto {
     private LocalDate startDate;
     private LocalTime startTime;
     private Double tariff;
-    private CityDto startCity;
-    private CityDto destinationCity;
+    private String startCity;
+    private String destinationCity;
     private LocalDateTime createdAt;
     private Integer capacity;
     private Double distance;

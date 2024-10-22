@@ -11,5 +11,4 @@ import java.time.LocalDateTime;
 public class CityDto {
     private String cityName;
     private LocalDateTime createdAt;
-    private ProvinceDto province;
 }
