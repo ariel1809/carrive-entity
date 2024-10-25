@@ -1,6 +1,5 @@
 package com.manage.carrive.dto;
 
-import com.manage.carrive.entity.City;
 import com.manage.carrive.enumeration.StatusItineraryEnum;
 import lombok.Getter;
 import lombok.Setter;

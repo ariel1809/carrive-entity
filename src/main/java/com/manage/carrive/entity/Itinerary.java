@@ -16,8 +16,7 @@ import java.time.LocalTime;
 @ToString
 @Getter @Setter
 @Document(collection = "itineraries")
-@EqualsAndHashCode(callSuper = true)
-public class Itinerary extends UserCarrive{
+public class Itinerary{
     @EqualsAndHashCode.Include
     private String id;
     @EqualsAndHashCode.Exclude
