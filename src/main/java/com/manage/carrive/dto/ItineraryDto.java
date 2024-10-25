@@ -24,4 +24,5 @@ public class ItineraryDto {
     private StatusItineraryEnum status;
     private Boolean acceptedPackage;
     private DriverDto driver;
+    private Boolean isPublished = false;
 }
