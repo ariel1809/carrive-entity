@@ -10,5 +10,4 @@ public class CarDto {
     private String matriculation;
     private String idCar;
     private CarDocumentDto carDocument;
-    private DriverDto driver;
 }

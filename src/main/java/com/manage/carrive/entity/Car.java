@@ -20,13 +20,7 @@ public class Car {
     @EqualsAndHashCode.Exclude
     private String idCar;
     @EqualsAndHashCode.Exclude
-    @DBRef
-    private Driver driver;
-    @EqualsAndHashCode.Exclude
     private String color;
-    @EqualsAndHashCode.Exclude
-    @Field(value = "car_brand")
-    private String carBrand;
     @EqualsAndHashCode.Exclude
     @Field(value = "car_model")
     private String carModel;
