@@ -8,6 +8,7 @@ import lombok.ToString;
 @Getter
 @AllArgsConstructor
 public enum StatusItineraryEnum {
+    CREATED(100),
     PENDING(400),
     FAILURE(500),
     SUCCESS(200);
