@@ -20,10 +20,10 @@ public class Conversation {
     private String id;
     @EqualsAndHashCode.Exclude
     @DBRef
-    private UserCarrive user1;
+    private Driver user1;
     @EqualsAndHashCode.Exclude
     @DBRef
-    private UserCarrive user2;
+    private Passenger user2;
     @EqualsAndHashCode.Exclude
     @DBRef
     private List<Message> messages = new ArrayList<>();

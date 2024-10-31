@@ -1,12 +1,12 @@
 package com.manage.carrive.response;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @ToString
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class MessageResponse {
     private String message;
     private Integer code;
