@@ -18,4 +18,3 @@ VOLUME /tmp
 
 # Copy the JAR from the build stage
 COPY --from=build /carrive-entity/target/*.jar carrive-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/carrive-0.0.1-SNAPSHOT.jar"]
